@@ -21,6 +21,7 @@ p {
     border-bottom: 3px solid #ffc107; /* Accent border color */
 }
 
+
 .nav-link {
     color: #f8f9fa; /* White color for nav links */
 }
@@ -28,6 +29,7 @@ p {
 .nav-link:hover {
     color: #ffc107; /* Accent color on hover */
 }
+
 
 /* Main Content Styles */
 .container {

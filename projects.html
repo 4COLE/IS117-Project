@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ... (same head as index.html) -->
-    <title>Projects - Your Portfolio</title>
+    <!-- Link the same head content as in index.html -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Projects - Cole Abney</title>
 </head>
 <body>
-    <!-- Navigation Bar (same as index.html) -->
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Cole Abney</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="about.html">About</a>
+                    <a class="nav-item nav-link" href="resume.html">Resume</a>
+                    <a class="nav-item nav-link active" href="projects.html">Projects</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- Main Content -->
     <main class="container mt-5">
-        <h1 class="text-center">Projects</h1>
-        <!-- Cards for Projects (same card-deck setup as index.html) -->
+        <!-- Content of the Projects page -->
     </main>
 
-    <!-- Footer (same as index.html) -->
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white mt-5">
+        <!-- Footer content -->
+    </footer>
 
-    <!-- Bootstrap JavaScript (same as index.html) -->
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
+<!-- Footer -->
+<footer class="footer bg-dark text-white mt-5">
+    <div class="container text-center py-3">
+        © Cole Abney 2024
+        <div>
+            <a href="#" class="text-white">Terms of Service</a> | 
+            <a href="#" class="text-white">Privacy Policy</a>
+        </div>
+    </div>
+</footer>

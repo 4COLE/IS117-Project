@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ... (same head as index.html) -->
-    <title>Contact - Your Portfolio</title>
+    <!-- Link the same head content as in index.html -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Contact - Cole Abney</title>
 </head>
 <body>
-    <!-- Navigation Bar (same as index.html) -->
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Cole Abney</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="about.html">About</a>
+                    <a class="nav-item nav-link" href="resume.html">Resume</a>
+                    <a class="nav-item nav-link" href="projects.html">Projects</a>
+                    <a class="nav-item nav-link active" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- Main Content -->
     <main class="container mt-5">
         <h1 class="text-center">Contact</h1>
-        <p class="text-center">Feel free to contact me using the form below.</p>
+        <p class="text-center">Feel free to contact me using the form below or through the following channels:</p>
+        <!-- Contact Links -->
+        <div class="text-center mb-4">
+            <a href="mailto:cla34@njit.edu" class="btn btn-primary mr-2"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://www.linkedin.com/in/4cole/" class="btn btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+
         <!-- Contact Form -->
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form>
-                    <div class="form-group">
-                        <label for="nameInput">Name</label>
-                        <input type="text" class="form-control" id="nameInput" placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="emailInput">Email address</label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="messageTextarea">Message</label>
-                        <textarea class="form-control" id="messageTextarea" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
+        <div class="container">
+            <form action="action_page.php">
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" class="form-control" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <textarea class="form-control" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </main>
 
-    <!-- Footer (same as index.html) -->
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white mt-5">
+        <!-- Footer content -->
+    </footer>
 
-    <!-- Bootstrap JavaScript (same as index.html) -->
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
+<!-- Footer -->
+<footer class="footer bg-dark text-white mt-5">
+    <div class="container text-center py-3">
+        © Cole Abney 2024
+        <div>
+            <a href="#" class="text-white">Terms of Service</a> | 
+            <a href="#" class="text-white">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
