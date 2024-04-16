@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-top: 70px; /* Adjusted for fixed navbar */
+    background-color: #f8f9fa; /* A light grey background */
+}
+
+h1 {
+    color: #343a40; /* Dark grey color for headings */
+    margin-bottom: 30px;
+}
+
+p {
+    color: #666; /* Lighter text color */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #343a40; /* Dark grey background */
+    border-bottom: 3px solid #ffc107; /* Accent border color */
+}
+
+.nav-link {
+    color: #f8f9fa; /* White color for nav links */
+}
+
+.nav-link:hover {
+    color: #ffc107; /* Accent color on hover */
+}
+
+/* Main Content Styles */
+.container {
+    max-width: 1140px; /* Max container width */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Card shadow for depth */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    color: #343a40; /* Matching heading color */
+}
+
+.card-text {
+    color: #666; /* Lighter text for the card */
+}
+
+.card-img-top {
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images cover the card area */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40; /* Dark grey background */
+    color: #f8f9fa; /* White text color */
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #ffc107; /* Accent color for links */
+}
+
+.footer a:hover {
+    color: #f8f9fa; /* White color on hover */
+}
+
+/* Contact Form Styles */
+form {
+    background-color: #fff; /* White background for form */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners for form */
+    margin-top: 20px; /* Spacing from the top */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1); /* Shadow for depth */
+}
+
+.form-control {
+    border-radius: 0; /* Square form fields */
+}
+
+.btn-primary {
+    background-color: #343a40; /* Dark grey background */
+    border-color: #343a40; /* Dark grey border */
+}
+
+.btn-primary:hover {
+    background-color: #ffc107; /* Accent color background on hover */
+    border-color: #ffc107; /* Accent color border on hover */
+}
