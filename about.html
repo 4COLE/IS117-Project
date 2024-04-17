@@ -1,3 +1,6 @@
+    <!-- Cole Abney: your name here, IS117-102, Spring 2024 -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Cole Abney</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -14,22 +17,20 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Cole Abney</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
+                <div class="navbar-nav me-auto">
                     <a class="nav-item nav-link" href="index.html">Home</a>
                     <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             About
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="subpage1.html">Life</a>
-                            <a class="dropdown-item" href="subpage2.html">Education</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="subpage3.html">Misc</a>
-                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="subpage1.html">Life</a></li>
+                            <li><a class="dropdown-item" href="subpage2.html">Education</a></li>
+                        </ul>
                     </div>
                     <a class="nav-item nav-link" href="resume.html">Resume</a>
                     <a class="nav-item nav-link" href="projects.html">Projects</a>
@@ -44,8 +45,7 @@
         <div class="row">
             <div class="col-md-8">
                 <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec leo ut justo tincidunt tristique.</p>
-                <p>Phasellus bibendum dolor sit amet lorem rhoncus congue. Sed ac commodo elit. Aliquam tincidunt mi ut orci feugiat, nec tincidunt nisi sodales.</p>
+                <p>Growing up I always had a keen for technology and electronics, if you would like to learn more about my joureny use the dropdown!.</p>
             </div>
             <div class="col-md-4">
                 <!-- Sidebar content (if applicable) -->
@@ -65,8 +65,7 @@
     </footer>
 
     <!-- Bootstrap JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

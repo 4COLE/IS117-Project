@@ -1,3 +1,6 @@
+/*Cole Abney: your name here, IS117-102, Spring, 2024 */
+
+
 /* Card Styles */
 .card-container {
     display: flex;
@@ -135,4 +138,11 @@ p {
     max-width: 500px; /* Adjust maximum width of carousel */
     max-height: 500px; /* Adjust maximum height of carousel */
     margin: auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it appears above other content */
 }
