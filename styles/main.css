@@ -1,3 +1,52 @@
+/* Card Styles */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 400px; /* Adjusted height */
+}
+
+.card-container img {
+    width: 100%;
+    height: 60%; /* Adjusted height */
+    object-fit: cover;
+}
+
+.card-content {
+    text-align: center;
+    padding: 20px; /* Adjusted padding */
+}
+
+/* New CSS for square cards */
+.square-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 400px; /* Adjusted height */
+}
+
+.square-card-container img {
+    width: 100%;
+    height: 60%; /* Adjusted height */
+    object-fit: cover;
+    object-position: center; /* Center the image */
+}
+
+.square-card-content {
+    text-align: center;
+    padding: 20px; /* Adjusted padding */
+}
+
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -21,40 +70,12 @@ p {
     border-bottom: 3px solid #ffc107; /* Accent border color */
 }
 
-
 .nav-link {
     color: #f8f9fa; /* White color for nav links */
 }
 
 .nav-link:hover {
     color: #ffc107; /* Accent color on hover */
-}
-
-
-/* Main Content Styles */
-.container {
-    max-width: 1140px; /* Max container width */
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Card shadow for depth */
-}
-
-.card-body {
-    padding: 15px;
-}
-
-.card-title {
-    color: #343a40; /* Matching heading color */
-}
-
-.card-text {
-    color: #666; /* Lighter text for the card */
-}
-
-.card-img-top {
-    height: 200px; /* Fixed height for images */
-    object-fit: cover; /* Ensure images cover the card area */
 }
 
 /* Footer Styles */
@@ -72,25 +93,46 @@ p {
     color: #f8f9fa; /* White color on hover */
 }
 
-/* Contact Form Styles */
-form {
-    background-color: #fff; /* White background for form */
-    padding: 20px;
-    border-radius: 5px; /* Rounded corners for form */
-    margin-top: 20px; /* Spacing from the top */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1); /* Shadow for depth */
+/* Custom CSS */
+.carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
-.form-control {
-    border-radius: 0; /* Square form fields */
+.carousel-caption {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center; /* Center-align text */
+    left: 0; /* Align text to the left */
+    right: 0; /* Align text to the right */
 }
 
-.btn-primary {
-    background-color: #343a40; /* Dark grey background */
-    border-color: #343a40; /* Dark grey border */
+.carousel-caption h5,
+.carousel-caption p {
+    margin: 0; /* Remove default margin to prevent extra spacing */
 }
 
-.btn-primary:hover {
-    background-color: #ffc107; /* Accent color background on hover */
-    border-color: #ffc107; /* Accent color border on hover */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 4%;
+    color: black; /* Change button color to white */    
+    top: auto;
+    bottom: 0;
+    z-index: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Invert button icon color */
+}
+
+.carousel-inner {
+    max-width: 500px; /* Adjust maximum width of carousel */
+    max-height: 500px; /* Adjust maximum height of carousel */
+    margin: auto;
 }

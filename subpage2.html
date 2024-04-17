@@ -14,22 +14,22 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Cole Abney</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link" href="index.html">Home</a>
                     <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             About
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="subpage1.html">Life</a>
-                            <a class="dropdown-item" href="subpage2.html">Education</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="subpage3.html">Misc</a>
-                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="subpage1.html">Life</a></li>
+                            <li><a class="dropdown-item" href="subpage2.html">Education</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="subpage3.html">Misc</a></li>
+                        </ul>
                     </div>
                     <a class="nav-item nav-link" href="resume.html">Resume</a>
                     <a class="nav-item nav-link" href="projects.html">Projects</a>
@@ -41,13 +41,43 @@
 
     <!-- Main Content -->
     <main class="container mt-5">
+        <h1 class="text-center">Education</h1>
         <div class="row">
-            <div class="col-md-8">
-                <h1>Subpage 2</h1>
-                <p>This is Subpage 2 content.</p>
+            <div class="col-md-3">
+                <div class="card-container"> <!-- Changed class name here -->
+                    <img class="img-fluid" src="images/elementary.jpg" alt="Elementary School">
+                    <div class="card-content"> <!-- Changed class name here -->
+                        <h5 class="card-title">Elementary School</h5>
+                        <p class="card-text">This is where I started my educational journey. This is also where my interest for computers and technology started to foster</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <!-- Sidebar content (if applicable) -->
+            <div class="col-md-3">
+                <div class="card-container"> <!-- Changed class name here -->
+                    <img class="img-fluid" src="images/middleschool.jpg" alt="Middle School">
+                    <div class="card-content"> <!-- Changed class name here -->
+                        <h5 class="card-title">Middle School</h5>
+                        <p class="card-text">This is where I continued my education. Bloomfield middle provided me with STEM courses and I.T. courses to further improve my skills</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card-container"> <!-- Changed class name here -->
+                    <img class="img-fluid" src="images/highschool.jpg" alt="High School">
+                    <div class="card-content"> <!-- Changed class name here -->
+                        <h5 class="card-title">High School</h5>
+                        <p class="card-text">This is where I completed my secondary education. High School helped me further my Computer Science skills to become a better programer. I also participated in Robotics while here.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card-container"> <!-- Changed class name here -->
+                    <img class="img-fluid" src="images/college.png" alt="College">
+                    <div class="card-content"> <!-- Changed class name here -->
+                        <h5 class="card-title">College</h5>
+                        <p class="card-text">I first started my college carrer at Montclair State as a Computer Scienece major, then after 4 semester I was offered a better opportunity @ NJIT so I made the switch!</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -66,6 +96,6 @@
     <!-- Bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
